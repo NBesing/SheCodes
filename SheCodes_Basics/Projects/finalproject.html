@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Desert App</title>
+
+    <style>
+        h1{
+            color:rgb(176, 5, 5);
+        }
+        h2,
+        h3{
+            color:rgb(239, 237, 237)
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            width:1000px 400px 1000px 400px ;
+            border-radius: 5px;
+        }
+        
+        a{
+            color:rgb(223, 39, 39);
+        }
+        button{
+            color:rgb(182, 7, 7);
+            background-color:rgb(244, 126, 126);
+            border:2px solid rgb(182, 7, 7);
+           font-size:18px; 
+           padding: 15px;
+           text-align: center; 
+           border-radius: 50px;
+           box-shadow: 0px,0px,1px,1px;
+           font-family: verdana;
+           list-style: none;
+           transition: all 200ms ease;
+          
+          }
+          button:hover{
+            background-color:rgb(182, 7, 7);
+            color:white;
+            
+         }
+
+        body{
+            background:rgb(30, 5, 69);
+        }
+       
+
+    </style>
+
+</head>
+<div class="container">
+<center>
+<body>
+    <h1>
+        <p>
+            WELCOME TO NAURY TASTY DESSERTS
+        </p>
+        😋!
+    </h1>
+    <h2>
+            The best dessert restaurant you can ever wish for
+    </h2>
+    <hr/>
+    <img src="https://www.istockphoto.com/photo/fresh-cakes-gm497959594-79404861?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fdessert&utm_term=dessert%3A%3A%3A" alt="picture of waffles">
+    <hr/>
+    <h3>
+    <p>
+        Here, we offer a variety of desserts such as pizza🍕, hamburgers🍔, cakes🧀, waffles and<em> <a href="google.com">many more</a> </em>. We deliver as per customer demands. 
+        <br>
+        We are located at the central town of Buea
+        </br>
+        <br>
+        Come and have a bite and you won't regret it!
+        </br>
+    </p>
+    </h3>
+
+    <button>
+       <strong>Place Order</strong> 
+    </button>
+    <script>
+        function placeOrder(){
+        let dessert=prompt("What is your choice of dessert?");
+        let amount=prompt("What quantity do you want?");
+        let h1=document.querySelector("h1")
+        if(dessert==="cake" || dessert==="waffles" || dessert==="pizza" && amount>=10){
+            h1.innerHTML = "Ooops! that amount isn't available! 😦"
+        }
+        else{
+            let h3=document.querySelector("h1");
+            h1.innerHTML = "Thanks for placing your demand! Your request will be processed shortly<br/> 😊 " 
+        }
+       }
+
+        let applyButton=document.querySelector("button");
+        applyButton.addEventListener("click" ,placeOrder);  
+    </script>
+</body>
+</center>
+</div>
+</html>
