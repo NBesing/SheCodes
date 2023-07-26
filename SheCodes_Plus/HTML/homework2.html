@@ -5,16 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homework2</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .container{
-            border:30em;
-            padding:2em;
+            border: 100px;;
+            padding:2px;
+            height: 100px;
             margin:20px
         }
 
@@ -27,33 +23,65 @@
     </style>
 </head>
 <body>hello
-<div class="container">
+    <div class="container">
+        
+        <!--style="width: 600px; height: 400px; border: 1px solid rgb(44, 35, 219);"-->
     <div class="weatherapp">
-        <form class="searchform">
+        <div class="col-6">
             <div class="row">
-                <div class="col">
-                    <input type="text" class="inputcity"
-                    placeholder="Search your city"
-                    autocomplete="on"
-                    autofocus="on">
-                </div>
-                <div class="col">
-                    <input type="submit" class="submit"
-                    label="Search">
-                </div>
+                <form class="searchform" style="text-align:center ;" > 
+                        <div class="col-12" >
+                            <input type="text" class="inputcity"
+                            placeholder="Search your city"
+                            autocomplete="on"
+                            autofocus="on">
+                            <input type="submit" class="submit"
+                            label="Search">   
+                        </div>          
+                </form>
             </div>
-        </form>
-        <div class="col">   
-            <h3>
-                Temperature
-            </h3>
-            <div class="col">
-                <h2>
-                    BUEA
-                </h2>
-            </div>
-           
-
+              
+                <div class="row">
+                    <div class="col-6">
+                    <h3 style="text-align:left ;">
+                       <p>Temperature</p>
+                    </h3>
+                    <h1  style="font-size: 36px; font-weight: bold; color: rgb(208, 22, 22); text-align:left ;">
+                        <p>22°C</p>
+                    </h1>
+                    </div> 
+                    <div class="col-6"  style="text-align:center ;">
+                    <h2 style="color: rgb(236, 99, 99)">
+                        <p>BUEA</p> 
+                    </h2>
+                    <h4>
+                        <p>Current day</p>
+                     </h4>
+                     <h3 style="color: rgb(90, 68, 181)"><p>Sunday</p></h3>
+                  </div>
+                </div>          
+                <div class="row" style="text-align:left">
+                    <div class="col-4" >
+                        <p>😊</p>
+                        <p>Monday</p>
+                        <p>😋</p>
+                        <p>Thursday</p>
+                    </div>
+                    <div class="col-4" >
+                        <p>😦</p>
+                        <p>Tuesday</p>
+                        <p>😊</p>
+                        <p>Friday</p>
+                    </div>
+                    <div class="col-4">
+                        <p>😋</p>
+                        <p>Wednesday</p>
+                        <p>😦</p>
+                        <p>Saturday</p>
+                    </div>
+                </div> 
+ 
+         
         </div>
     </div>
 </div>
